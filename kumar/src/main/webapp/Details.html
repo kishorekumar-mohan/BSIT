@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Market</title>
+</head>
+<body>
+    <h1>Fruit Market Management</h1>
+    <form action="fruit" method="post">
+        <h2>Add Fruit</h2>
+        Name: <input type="text" name="name"><br>
+        Price: <input type="number" name="price" step="0.01"><br>
+        <input type="hidden" name="action" value="add">
+        <button type="submit">Add Fruit</button>
+    </form>
+    <form action="fruit" method="post">
+        <h2>Update Fruit</h2>
+        ID: <input type="number" name="id"><br>
+        Name: <input type="text" name="name"><br>
+        Price: <input type="number" name="price" step="0.01"><br>
+        <input type="hidden" name="action" value="update">
+        <button type="submit">Update Fruit</button>
+    </form>
+    <form action="fruit" method="post">
+        <h2>Delete Fruit</h2>
+        ID: <input type="number" name="id"><br>
+        <input type="hidden" name="action" value="delete">
+        <button type="submit">Delete Fruit</button>
+    </form>
+    <form action="fruit" method="get">
+        <h2>View Fruits</h2>
+        <input type="hidden" name="action" value="view">
+        <button type="submit">View Fruits</button>
+    </form>
+</body>
+</html>

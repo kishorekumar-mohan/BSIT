@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+           
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px black;
+        }
+
+        form h3 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: gray;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid;
+            border-radius: 14px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: Red;
+            color: Black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+        
+        button:active {
+        	background-color: yellow;
+        }
+
+        hr {
+            border: 10px;
+            height: 1px;
+            margin: 30px 0;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+ <form action="add-students" method="post">
+        <h3><Center>Insert Student</h3>
+        <label for="name">Name:</label>
+        <input type="text" placeholder='Enter Your Name' name="name" step="0.01" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" 
+           name="age" step="0.01" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">MALE
+	    <input type="radio"name="gender" value="female">FEMALE
+	    <input type="radio"name="gender" value="others" step="0.01" required>OTHERS<br><br><br>
+	<!-- <label for="data">Date Of Birth:</label>-->
+		<!-- <input type="date" name="date" step="0.01" required><br><br><br>  -->
+        <label for="department">Department:</label>
+        <input type="text"  name="department" step="0.01" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email"  name="email" step="0.01"required><br><br>
+        <input type="hidden" name="action" value="insert">
+        <button type="submit">Insert Student</button>
+    </form>
+
+</body>
+</html>
