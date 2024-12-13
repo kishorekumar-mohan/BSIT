@@ -1,0 +1,151 @@
+{
+  "company": {
+    "name": "Tech Innovators Inc.",
+    "founded": 2010,
+    "location": {
+      "headquarters": {
+        "city": "San Francisco",
+        "state": "California",
+        "country": "USA"
+      },
+      "branches": [
+        {
+          "city": "New York",
+          "state": "New York",
+          "country": "USA"
+        },
+        {
+          "city": "London",
+          "state": null,
+          "country": "UK"
+        },
+        {
+          "city": "Bangalore",
+          "state": "Karnataka",
+          "country": "India"
+        }
+      ]
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "head": "Alice Johnson",
+        "teams": [
+          {
+            "name": "Frontend Development",
+            "teamLead": "John Doe",
+            "members": [
+              {
+                "name": "Emily Davis",
+                "role": "UI/UX Designer",
+                "skills": ["HTML", "CSS", "JavaScript", "Figma"]
+              },
+              {
+                "name": "Michael Smith",
+                "role": "Frontend Developer",
+                "skills": ["Angular", "React", "Vue"]
+              }
+            ]
+          },
+          {
+            "name": "Backend Development",
+            "teamLead": "Rajesh Kumar",
+            "members": [
+              {
+                "name": "Sophia Brown",
+                "role": "Backend Developer",
+                "skills": ["Java", "Spring Boot", "Hibernate"]
+              },
+              {
+                "name": "Liam Wilson",
+                "role": "Database Administrator",
+                "skills": ["MySQL", "PostgreSQL", "MongoDB"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "head": "Chris Evans",
+        "teams": [
+          {
+            "name": "Content Marketing",
+            "teamLead": "Lisa White",
+            "members": [
+              {
+                "name": "Mark Lee",
+                "role": "Content Writer",
+                "skills": ["SEO", "Copywriting", "Blogging"]
+              },
+              {
+                "name": "Mark Lee",
+                "role": "Content Writer",
+                "skills": ["SEO", "Copywriting", "Blogging"]
+              }
+            ]
+          },
+          {
+            "name": "Social Media",
+            "teamLead": "Ella Adams",
+            "members": [
+              {
+                "name": "Lucas King",
+                "role": "Social Media Strategist",
+                "skills": ["Facebook Ads", "Instagram Marketing", "Analytics"]
+              },
+               {
+                "name": "Lucas King",
+                "role": "Social Media Strategist",
+                "skills": ["Facebook Ads", "Instagram Marketing", "Analytics"]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "products": [
+      {
+        "name": "InnoCloud",
+        "category": "Cloud Computing",
+        "features": ["Scalability", "Security", "Reliability"],
+        "pricing": {
+          "basic": 49.99,
+          "pro": 99.99,
+          "enterprise": 199.99
+        }
+      },
+      {
+        "name": "SecurePay",
+        "category": "Payment Gateway",
+        "features": ["Fraud Detection", "Multi-Currency", "Quick Integration"],
+        "pricing": {
+          "basic": 29.99,
+          "pro": 59.99,
+          "enterprise": 149.99
+        }
+      }
+    ],
+    "analytics": {
+      "monthlyUsers": 120000,
+      "activeUsers": {
+        "daily": 10000,
+        "weekly": 50000,
+        "monthly": 80000
+      },
+      "engagement": {
+        "averageSessionDuration": "5m 30s",
+        "bounceRate": "42%"
+      }
+    },
+    "contact": {
+      "email": "support@techinnovators.com",
+      "phone": "+1-800-555-0199",
+      "socialMedia": {
+        "twitter": "@TechInnovators",
+        "facebook": "facebook.com/TechInnovators",
+        "linkedin": "linkedin.com/company/tech-innovators"
+      }
+    }
+  }
+}

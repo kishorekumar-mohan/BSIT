@@ -1,0 +1,44 @@
+{
+  "customer": {
+    "id": "C12345",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "contact": {
+      "phone": "555-1234",
+      "mobile": "555-5678"
+    }
+  },
+  "account": {
+    "accountNumber": "AC987654321",
+    "type": "Checking",
+    "balance": 2500.75,
+    "currency": "USD",
+    "status": "Active",
+    "transactions": [
+      {
+        "date": "2024-12-01",
+        "type": "Deposit",
+        "amount": 1500.00,
+        "description": "Salary Deposit"
+      },
+      {
+        "date": "2024-12-03",
+        "type": "Withdrawal",
+        "amount": 200.00,
+        "description": "ATM Withdrawal"
+      },
+      {
+        "date": "2024-12-04",
+        "type": "Transfer",
+        "amount": 300.00,
+        "description": "Transfer to Account AC123456"
+      }
+    ]
+  }
+}

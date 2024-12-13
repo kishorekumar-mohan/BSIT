@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <name>Tech Innovators Inc.</name>
+    <founded>2010</founded>
+    <location>
+        <headquarters>
+            <city>San Francisco</city>
+            <state>California</state>
+            <country>USA</country>
+        </headquarters>
+        <branches>
+            <branch>
+                <city>New York</city>
+                <state>New York</state>
+                <country>USA</country>
+            </branch>
+            <branch>
+                <city>London</city>
+                <state>null</state>
+                <country>UK</country>
+            </branch>
+            <branch>
+                <city>Bangalore</city>
+                <state>Karnataka</state>
+                <country>India</country>
+            </branch>
+        </branches>
+    </location>
+    <departments>
+        <department>
+            <name>Engineering</name>
+            <head>Alice Johnson</head>
+            <teams>
+                <team>
+                    <name>Frontend Development</name>
+                    <teamLead>John Doe</teamLead>
+                    <members>
+                        <member>
+                            <name>Emily Davis</name>
+                            <role>UI/UX Designer</role>
+                            <skills>
+                                <skill>HTML</skill>
+                                <skill>CSS</skill>
+                                <skill>JavaScript</skill>
+                                <skill>Figma</skill>
+                            </skills>
+                        </member>
+                        <member>
+                            <name>Michael Smith</name>
+                            <role>Frontend Developer</role>
+                            <skills>
+                                <skill>Angular</skill>
+                                <skill>React</skill>
+                                <skill>Vue</skill>
+                            </skills>
+                        </member>
+                    </members>
+                </team>
+                <team>
+                    <name>Backend Development</name>
+                    <teamLead>Rajesh Kumar</teamLead>
+                    <members>
+                        <member>
+                            <name>Sophia Brown</name>
+                            <role>Backend Developer</role>
+                            <skills>
+                                <skill>Java</skill>
+                                <skill>Spring Boot</skill>
+                                <skill>Hibernate</skill>
+                            </skills>
+                        </member>
+                        <member>
+                            <name>Liam Wilson</name>
+                            <role>Database Administrator</role>
+                            <skills>
+                                <skill>MySQL</skill>
+                                <skill>PostgreSQL</skill>
+                                <skill>MongoDB</skill>
+                            </skills>
+                        </member>
+                    </members>
+                </team>
+            </teams>
+        </department>
+        <department>
+            <name>Marketing</name>
+            <head>Chris Evans</head>
+            <teams>
+                <team>
+                    <name>Content Marketing</name>
+                    <teamLead>Lisa White</teamLead>
+                    <members>
+                        <member>
+                            <name>Lee</name>
+                            <role>Content Writer</role>
+                            <skills>
+                                <skill>SEO</skill>
+                                <skill>Copywriting</skill>
+                                <skill>Blogging</skill>
+                            </skills>
+                        </member>
+                        <member>
+                            <name>Mark </name>
+                            <role>Content Writer</role>
+                            <skills>
+                                <skill>SEO</skill>
+                                <skill>Copywriting</skill>
+                                <skill>Blogging</skill>
+                            </skills>
+                        </member>
+                    </members>
+                </team>
+                <team>
+                    <name>Social Media</name>
+                    <teamLead>Ella Adams</teamLead>
+                    <members>
+                        <member>
+                            <name>Lucas</name>
+                            <role>Social Media Strategist</role>
+                            <skills>
+                                <skill>Facebook Ads</skill>
+                                <skill>Instagram Marketing</skill>
+                                <skill>Analytics</skill>
+                            </skills>
+                        </member>
+                        <member>
+                            <name>King</name>
+                            <role>Social Media Strategist</role>
+                            <skills>
+                                <skill>Facebook Ads</skill>
+                                <skill>Instagram Marketing</skill>
+                                <skill>Analytics</skill>
+                            </skills>
+                        </member>
+                    </members>
+                </team>
+            </teams>
+        </department>
+    </departments>
+    <products>
+        <product>
+            <name>InnoCloud</name>
+            <category>Cloud Computing</category>
+            <features>
+                <feature>Scalability</feature>
+                <feature>Security</feature>
+                <feature>Reliability</feature>
+            </features>
+            <pricing>
+                <basic>49.99</basic>
+                <pro>99.99</pro>
+                <enterprise>199.99</enterprise>
+            </pricing>
+        </product>
+        <product>
+            <name>SecurePay</name>
+            <category>Payment Gateway</category>
+            <features>
+                <feature>Fraud Detection</feature>
+                <feature>Multi-Currency</feature>
+                <feature>Quick Integration</feature>
+            </features>
+            <pricing>
+                <basic>29.99</basic>
+                <pro>59.99</pro>
+                <enterprise>149.99</enterprise>
+            </pricing>
+        </product>
+    </products>
+    <analytics>
+        <monthlyUsers>120,000</monthlyUsers>
+        <activeUsers>
+            <daily>10,000</daily>
+            <weekly>50,000</weekly>
+            <monthly>80,000</monthly>
+        </activeUsers>
+        <engagement>
+            <averageSessionDuration>5m 30s</averageSessionDuration>
+            <bounceRate>42%</bounceRate>
+        </engagement>
+    </analytics>
+    <contact>
+        <email>support@techinnovators.com</email>
+        <phone>+1-800-555-0199</phone>
+        <socialMedia>
+            <twitter>@TechInnovators</twitter>
+            <facebook>facebook.com/TechInnovators</facebook>
+            <linkedin>linkedin.com/company/tech-innovators</linkedin>
+        </socialMedia>
+    </contact>
+</company>
