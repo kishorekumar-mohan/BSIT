@@ -1,0 +1,5 @@
+com\example\boot\controller\FileController.class
+com\example\boot\service\TemplateService.class
+com\example\boot\service\DatabaseService.class
+com\example\boot\BootApplication.class
+com\example\boot\exception\ApiProcessingException.class
