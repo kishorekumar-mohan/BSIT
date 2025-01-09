@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-4.3.xsd
+                           http://www.springframework.batch.org/schema/job
+                           http://www.springframework.batch.org/schema/job/spring-batch-job-4.0.xsd
+                           http://www.springframework.batch.org/schema/core
+                           http://www.springframework.batch.org/schema/core/spring-batch-core-4.0.xsd">
+
+    <!-- Enable Spring Batch -->
+    <import resource="classpath:/org/springframework/batch/core/schema-drop.xml" />
+    <import resource="classpath:/org/springframework/batch/core/schema-mysql.xml" />
+
+    <!-- DataSource Bean (Dummy for JobRepository) -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <property name="url" value="jdbc:h2:mem:testdb"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
+
+    <!-- Transaction Manager -->
+    <bean id="transactionManager" class="org.springframework.batch.core.transaction.support.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- JobRepository Bean -->
+    <bean id="jobRepository" class="org.springframework.batch.core.repository.support.JobRepositoryFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="databaseType" value="h2"/>
+    </bean>
+
+    <!-- HelloTasklet Bean (will print to the console) -->
+    <bean id="helloTasklet" class="com.example.tasklet.HelloTasklet"/>
+
+    <!-- Step definition for HelloTasklet using SimpleStepBuilder -->
+    <bean id="helloWorldStep" class="org.springframework.batch.core.step.tasklet.TaskletStep">
+        <property name="tasklet" ref="helloTasklet"/>
+        <property name="name" value="helloWorldStep"/>
+        <property name="jobRepository" ref="jobRepository"/>
+    </bean>
+
+    <!-- Job definition -->
+    <bean id="helloWorldJob" class="org.springframework.batch.core.job.builder.JobBuilderFactory">
+        <property name="start" ref="helloWorldStep"/>
+    </bean>
+
+    <!-- JobLauncher Bean -->
+    <bean id="jobLauncher" class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+        <property name="jobRepository" ref="jobRepository"/>
+    </bean>
+
+</beans>
